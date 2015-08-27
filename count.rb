@@ -8,7 +8,7 @@ def count_letter(string)
   end
   puts "Here is a list of the characters that were in the string you provided, and the number of times each occured within the string:"
   characters. each do |character_key, occurence_value|
-    puts "#{character_key}: #{occurence_value}"
+    puts "#{character_key.inspect}: #{occurence_value}"
   end
 end
 
