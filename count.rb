@@ -3,8 +3,8 @@
 def count_letter(string)
   characters = {}
   characters.default = 0
-  string.downcase!.split('').each do |block_var|
-    characters[block_var] += 1
+  string.downcase!.split('').each do |count|
+    characters[count] += 1
   end
   puts "Here is a list of the characters that were in the string you provided, and the number of times each occured within the string:"
   characters. each do |character_key, occurence_value|
