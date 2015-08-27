@@ -3,7 +3,7 @@
 def count_letter(string)
   characters = {}
   characters.default = 0
-  string.downcase!.split('').each do |count|
+  string.split('').each do |count|
     characters[count] += 1
   end
   puts "Here is a list of the characters that were in the string you provided, and the number of times each occured within the string:"
@@ -12,7 +12,6 @@ def count_letter(string)
   end
 end
 
-teststring1 = "Today is Wednesday, August the 26th."
-#teststring2 = "Tomorrow is Thursday, August the 27th."
+teststring1 = "lighthouse in the house..."
 
 count_letter(teststring1)
